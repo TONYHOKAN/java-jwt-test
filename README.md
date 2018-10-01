@@ -34,6 +34,7 @@ if using `openssl genrsa` or `ssh-agent` to create `.pem` refer [this](https://s
 we can also use `openssl genrsa` to convert `.pem` file to `.der` file refer [this](https://stackoverflow.com/questions/11410770/load-rsa-public-key-from-file), this way need less JAVA code to handle so will be less overhead.This is same as `.pem` that we need encode private key to `pkcs8` format but output `.der` file to support JAVA.
 
 ## Test
+1. `mvn install`
 1. `sh jwt_key_pair.sh` generated public/ private key
 1. replace `privateKeyPath` and `publicKeyPath` in App.java
 1. run App.java
