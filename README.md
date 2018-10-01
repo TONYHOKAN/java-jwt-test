@@ -11,7 +11,9 @@ this is tool specify for JAVA, the tool will create `keystore` which is JAVA con
 reference:
 
 [difference-between-keytool-and-openssl](https://stackoverflow.com/questions/48472764/difference-between-keytool-and-openssl)
+
 [Difference between OpenSSL and keytool](https://security.stackexchange.com/questions/98282/difference-between-openssl-and-keytool)
+
 [Java JWT Token Tutorial using JJWT Library](https://www.codeproject.com/Articles/1253786/Java-JWT-Token-Tutorial-using-JJWT-Library)
 
 ## openssl genrsa
@@ -23,7 +25,9 @@ tool normally for creating private/ public key for ssh access
 [What are the differences between ssh generated keys(ssh-keygen) and OpenSSL keys (PEM)and what is more secure for ssh remote login?](https://security.stackexchange.com/questions/29876/what-are-the-differences-between-ssh-generated-keysssh-keygen-and-openssl-keys)
 
 ## How to load different type of generated key using JAVA
-if you using `keytool` generating `.jks` file will be the most JAVA way, follow [this](https://www.codeproject.com/Articles/1253786/Java-JWT-Token-Tutorial-using-JJWT-Library), but less compatible with other tools, need step to convert file to `.pem` ..etc format.
+if you using `keytool` generating `.jks` file will be the most JAVA way, follow 
+[this](https://www.codeproject.com/Articles/1253786/Java-JWT-Token-Tutorial-using-JJWT-Library)
+, but less compatible with other tools, need step to convert file to `.pem` ..etc format.
 
 if using `openssl genrsa` or `ssh-agent` to create `.pem` refer [this](https://stackoverflow.com/questions/11787571/how-to-read-pem-file-to-get-private-and-public-key), that need more JAVA code to handle. Also we need encode private key to `pkcs8` format `.pem` file to support JAVA.
 
